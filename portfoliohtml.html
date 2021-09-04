@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>PIUMI ANUTHTHARA PORTFOLIO</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='./Images/profilepic.jpg'/>
+        <div class='herosectionDetails'>
+          <h1>Piumi Anuththara</h1>
+          <h3> <i>Undergraduate at University of Moratuwa</i></h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>I'm Piumi Anuththara. I am a second year student at the University of Moratuwa.I am studing for an honors degree in Information Technology and Management.I am also studing for an external degree in Law.I have taken several courses related to html,css,javascript and php.I have worked at Sampath bank for my internship.I can collaborate with others and make the right decisions on occasion.My future hope is to become an IT Manager.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='./Images/html-svgrepo-com.svg'>
+          <img title='CSS' src='./Images/css-svgrepo-com.svg'>
+          <img title='Javascript' src='./Images/javascript-logo-svgrepo-com.svg'>
+          <img title='Node.JS' src='./Images/node-svgrepo-com.svg'>
+          <img title='React' src='./Images/react-1-logo-svgrepo-com.svg'>
+          <img title='C language' src='./Images/c-programming-language-logo.png'>
+          <img title='C++ language' src='./Images/C++_logo.png'>
+          <img title='php' src='./Images/php-logo.png'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./Images/html-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>I completed html course.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='./Images/css-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>I completed CSS course.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
